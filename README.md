@@ -12,9 +12,12 @@ A state-of-the-art Voice Cloning and Fake Audio Detection (VCFAD) system using p
 ## System Architecture
 
 ### Agent Coordination
-VoiceCloningAgent → FakeAudioDetectionAgent → VisualizationAgent
-↓                    ↓                      ↓
-MessageBus ← CoordinatorAgent ← Status Monitoring
+1. CoordinatorAgent        → Initiates pipeline execution
+2. VoiceCloningAgent       → Generates synthetic audio files
+3. MessageBus              → Routes synthetic audio to FAD
+4. FakeAudioDetectionAgent → Receives audio, trains classifier
+5. VisualizationAgent      → Creates comprehensive analysis
+6. CoordinatorAgent        → Monitors status & aggregates results
 
 ### Technology Stack
 - **Voice Synthesis**: Chatterbox TTS (Pre-trained Transformer model)
