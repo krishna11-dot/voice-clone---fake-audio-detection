@@ -4,7 +4,7 @@
 ##  **QUICK ACCESS FOR REVIEWERS**
 | Link Type | Description | Best For |
 |-----------|-------------|----------|
-| ** [LIVE INTERACTIVE DEMO](your-colab-share-link-here)** | Working audio samples + full outputs | **Hearing actual results** |
+| ** [LIVE INTERACTIVE DEMO](https://colab.research.google.com/drive/102r782z8C6xcxQ6yyPl32_L67A1CT0kx?usp=sharing)** | Working audio samples + full outputs | **Hearing actual results** |
 | ** [COMPLETE ANALYSIS](https://nbviewer.org/github/krishna11-dot/voice-clone-multiagent-audio-detection/blob/main/VCFAD_MultiAgent_System_Perfect_Classification__.ipynb)** | Full visualizations + metrics | **Technical review** |
 | ** [SOURCE CODE](https://github.com/krishna11-dot/voice-clone-multiagent-audio-detection)** | Clean code repository | **Code inspection** |
 
