@@ -4,9 +4,9 @@
 ##  **QUICK ACCESS FOR REVIEWERS**
 | Link Type | Description | Best For |
 |-----------|-------------|----------|
-| ** [LIVE INTERACTIVE DEMO](https://colab.research.google.com/drive/102r782z8C6xcxQ6yyPl32_L67A1CT0kx?usp=sharing)** | Working audio samples + full outputs | ** Actual results** |
-| ** [COMPLETE ANALYSIS  ](https://colab.research.google.com/gist/krishna11-dot/757e5fe5cec4da3e7c66aca9be459308/voice_clone_fake_classification_multi-agents_output.ipynb)** | Full visualizations + metrics | **Technical review** |
-| ** [SOURCE CODE](https://github.com/krishna11-dot/voice-clone-multiagent-audio-detection)** | Clean code repository | **Code inspection** |
+| ** [LIVE INTERACTIVE DEMO](https://colab.research.google.com/drive/19C3495B5_-WakgbxPF8ahaHQUF2ivOlB?usp=sharing)** | Working audio samples + full outputs | ** Actual results** |
+| ** [COMPLETE ANALYSIS  ](https://colab.research.google.com/gist/krishna11-dot/98c5d9855112f167732aad4e56847c47/voice_cloning_fake-_audio_detecion.ipynb)** | Full visualizations + metrics | **Technical review** |
+| ** [SOURCE CODE](https://github.com/krishna11-dot/voice-clone-multiagent-audio-detection/blob/main/voice_audio_fake_detection_multiagents.ipynb)** | Clean code repository | **Code inspection** |
 
 > *No installation required - just click the links above to explore*
 
