@@ -9,7 +9,7 @@
 
 ---
 
-## 🚀 Quick Start (5 Minutes)
+## 🚀 Quick Start 
 
 ### Step 1: Open in Colab
 Click here to open the notebook: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/voice-clone---fake-audio-detection/blob/main/VCFAD_System.ipynb)
@@ -20,13 +20,13 @@ Click here to open the notebook: [![Open In Colab](https://colab.research.google
 # This installs all dependencies including NeuTTS Air
 ```
 
-### Step 3: Run Quick Test (2 minutes)
+### Step 3: Run Quick Test 
 ```python
 from vcfad_system import run_production_quick_test
 result = run_production_quick_test()
 ```
 
-### Step 4: Run Full Pipeline (70 minutes)
+### Step 4: Run Full Pipeline 
 ```python
 from vcfad_system import run_complete_production_pipeline
 results = run_complete_production_pipeline()
