@@ -12,7 +12,7 @@
 ## 🚀 Quick Start 
 
 ### Step 1: Open in Colab
-Click here to open the notebook: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/voice-clone---fake-audio-detection/blob/main/VCFAD_System.ipynb)
+Click here to open the notebook: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/193QCPOayJc0EmxI_aQeuoR0twCfjDEBj#scrollTo=SBcmY7AAWg7o)
 
 ### Step 2: Run Installation Cell
 ```python
@@ -412,7 +412,7 @@ brew install espeak
 
 **Recommended:**
 - Python 3.10+
-- CUDA GPU with 16GB+ VRAM (A100, V100, RTX 4090)
+- CUDA GPU with 16GB+ VRAM (A100, L4,T4)
 - 32GB RAM
 - 50GB free disk space for datasets and models
 
@@ -439,7 +439,7 @@ print(f"✓ NeuTTS Air ready")
 
 ## 🚀 Usage
 
-### Quick Test (2 minutes)
+### Quick Test 
 ```python
 from vcfad_system import run_production_quick_test
 
@@ -447,7 +447,7 @@ result = run_production_quick_test()
 # Tests: 1 voice clone + detection + watermark verification
 ```
 
-### Progressive Scaling Test (5 minutes)
+### Progressive Scaling Test 
 ```python
 from vcfad_system import run_progressive_scaling_test
 
@@ -455,7 +455,7 @@ result = run_progressive_scaling_test(target_samples=100)
 # Tests stability: 5 → 10 → 20 → 50 → 100 samples
 ```
 
-### Full Pipeline (60-70 minutes)
+### Full Pipeline 
 ```python
 from vcfad_system import run_complete_production_pipeline
 
@@ -1104,38 +1104,6 @@ Safety Margin:        64.5% remaining
 | **Testing** | ✅ Validated | 1,400 samples | Thoroughly tested |
 | **Real-Time Performance** | ⚠️ Good | RTF: 0.53 | Can be optimized |
 
-### Roadmap Progress
-
-**Q1 2025:**
-- [x] NeuTTS Air integration
-- [x] Triple-layer detection
-- [x] Production metrics
-- [x] Comprehensive documentation
-- [ ] Docker container (In Progress)
-- [ ] REST API (Planned)
-
-**Q2 2025:**
-- [ ] RTF optimization to >1.0
-- [ ] Mobile model compression
-- [ ] Multi-TTS engine support
-- [ ] Real-time streaming
-
-**Q3-Q4 2025:**
-- [ ] Multilingual support
-- [ ] Edge device deployment
-- [ ] iOS/Android apps
-- [ ] Research paper publication
-
-### Known Issues
-
-| Issue | Priority | Status | ETA |
-|-------|----------|--------|-----|
-| RTF < 1.0 for real-time | Medium | Open | Q2 2025 |
-| False negatives (~3%) | Low | Open | Q2 2025 |
-| No Docker container | Medium | In Progress | Q1 2025 |
-| No REST API | Medium | Planned | Q1 2025 |
-| Mobile support | Low | Planned | Q3 2025 |
-
 ---
 
 ## ⭐ Support
@@ -1176,28 +1144,12 @@ If this helped your research or project, please:
 - Report bugs
 - Suggest improvements
 
-### Getting Help
-
-**For Issues:**
-1. Check [Troubleshooting](#-troubleshooting) section
-2. Search [existing issues](https://github.com/krishna11-dot/voice-clone---fake-audio-detection/issues)
-3. Read the [FAQ](#-faq)
-4. Open a [new issue](https://github.com/krishna11-dot/voice-clone---fake-audio-detection/issues/new) with:
-   - Detailed description
-   - Error messages
-   - System specifications
-   - Steps to reproduce
 
 **For Questions:**
 - Use [GitHub Discussions](https://github.com/krishna11-dot/voice-clone---fake-audio-detection/discussions)
 - Tag with appropriate labels
 - Be specific and provide context
 
-**For Collaborations:**
-- Email: your.email@example.com
-- Include: Project description, timeline, goals
-
----
 
 **Status:** ✅ Production Ready (9.0/10) | Last Updated: January 2025
 
