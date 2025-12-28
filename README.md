@@ -11,7 +11,7 @@
 
 ## 📋 Table of Contents
 
-1. [ Project Overview - (# Project Overview - )
+1. [Project Overview - Quick Guide](#-project-overview---quick-guide)
 2. [System Overview - Voice Cloning & Fake Detection](#-system-overview---voice-cloning--fake-detection)
 3. [Problem - Why This Exists](#-1-problem---why-this-exists)
 4. [Solution - What It Does](#-2-solution---what-it-does)
@@ -27,13 +27,13 @@
 
 ---
 
-## 💡 What Is This? (Start Here!)
+## 💡 In Plain English - What Is This? (Start Here!)
 
 **Imagine this:** Someone records your voice for just 5 seconds, then uses AI to make you "say" anything they want - maybe a fake confession, a fraudulent bank transaction, or a false political statement. Scary, right?
 
 **This system catches those fakes.**
 
-### How It Works 
+### How It Works (Simple Version)
 
 **Part 1: Creating the Training Data (Teaching the System)**
 
@@ -147,7 +147,7 @@ Think of it like having **three security guards** checking the same audio file:
 
 ---
 
-## 📋 Project Overview - 
+## 📋 Project Overview - Quick Guide
 
 **For Technical Deep Dive**
 
@@ -322,14 +322,14 @@ Example:
 **Q: Why does AASIST beat CNN by 2.4%?**
 **A:** Attention mechanism. CNN has limited receptive field (~15 features), can't relate patterns 100ms apart. AASIST uses multi-head attention with global receptive field - can relate ANY two positions. This catches TTS artifacts like unnatural pitch consistency across distant time steps.
 
-**Q: is production-ready?**
+**Q: How do you know your system is production-ready?**
 **A:** Four indicators:
 1. Accuracy: 98.14% exceeds >95% industry target
 2. Stability: 0 crashes in full pipeline, progressive scaling tested
 3. Efficiency: 20.5% peak memory (3x better than typical 60-70%)
 4. Explainability: Layer votes, agreement, confidence scores
 
-**Q: biggest limitation?**
+**Q: What's your biggest limitation?**
 **A:** Single TTS engine training. I initially experimented with ChatterboxTTS (newer model) but encountered high GPU memory requirements, so I switched to NeuTTS Air (2x faster: 5-7s vs 11-13s per sample). From ChatterboxTTS experiments, I observed that detectors trained on one TTS engine show degraded performance on others (accuracy drops to ~87-90%). **Mitigation:** Generate 200 samples from each of 5 TTS engines for cross-TTS generalization.
 
 ---
@@ -403,8 +403,8 @@ CommonVoice → 700 Real Samples → Balanced Dataset (1,400 total)
 3. ✅ Explore [Use Cases](#-use-cases--deployment) for real applications
 4. ⏭️ Skip the technical sections (unless curious!)
 
-**💼 Technical Readers / Interviewers:**
-1. ✅ Start with [Interview Quick Guide](#-project-overview---interview-quick-guide) ← **Perfect for interviews!**
+**💼 Technical Readers:**
+1. ✅ Start with [Quick Guide](#-project-overview---quick-guide) ← **Perfect for technical deep dive!**
 2. ✅ Read [Problem-Solution-Result](#-1-problem---why-this-exists) for full context
 3. ✅ Study [Complete Architecture](#-4-how-it-works---complete-system-architecture) for details
 4. ✅ Deep dive into [Technical Details](#-technical-deep-dive)
@@ -641,14 +641,7 @@ if (target_info['gender'] != source_info['gender'] or
 - **Goal:** RTF > 1.0 for real-time applications
 - **Status:** Good for batch processing, excellent for offline analysis
 
-**Production Readiness: 9.0/10**
-- **Simple:** System is deployment-ready with excellent performance
-- **Components:**
-  - Real-Time Capability: Excellent
-  - Resource Efficiency: 3.28 (very efficient)
-  - Model Accuracy: 8.8/10
-  - Scalability: Proven up to 700 samples
-- **Why 9.0:** Missing multi-TTS generalization (would need 5+ TTS engines for 10/10)
+
 
 **Watermark Detection: 100%**
 - **Simple:** All 50 NeuTTS Air samples contained detectable watermarks
@@ -2140,7 +2133,7 @@ This project includes comprehensive documentation for deep understanding:
    - Specific mitigation strategies
    - Production readiness context
 
-4. **[INTERVIEW_GUIDE.md](docs/INTERVIEW_GUIDE.md)** - Interview preparation
+4. **[INTERVIEW_GUIDE.md](docs/INTERVIEW_GUIDE.md)** - Technical explanation framework
    - Swarnabha's teaching framework ("What is input? What is output?")
    - Complete pipeline diagram with weighted voting
    - How to explain system architecture
@@ -2165,17 +2158,17 @@ This project includes comprehensive documentation for deep understanding:
 7. **[QUICK_REFERENCE.md](docs/QUICK_REFERENCE.md)** - Quick lookup
    - One-sentence system summary
    - Key metrics at a glance
-   - Common interview questions
+   - Common technical questions
    - Technical nuances
    - Quick decision tree
 
 ### How to Use Documentation
 
-**For Interviews:**
+**For Quick Reference:**
 1. Start with [INTERVIEW_GUIDE.md](docs/INTERVIEW_GUIDE.md) - Master the explanation framework
 2. Review [ARCHITECTURE.md](docs/ARCHITECTURE.md) - Understand complete system
 3. Study [LIMITATIONS.md](docs/LIMITATIONS.md) - Be honest about trade-offs
-4. Use [QUICK_REFERENCE.md](docs/QUICK_REFERENCE.md) - Quick review before interview
+4. Use [QUICK_REFERENCE.md](docs/QUICK_REFERENCE.md) - Quick review reference
 
 **For Implementation:**
 1. Start with [SIMPLE_PIPELINE_ARCHITECTURE.md](docs/SIMPLE_PIPELINE_ARCHITECTURE.md) - Understand flow
@@ -2644,7 +2637,7 @@ See [LICENSE](LICENSE) file for details.
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 
-**Status:** ✅ Production Ready | **Last Updated:** October 2025
+**Status:** ✅ Production Ready (9.0/10) | **Last Updated:** October 2025
 
 **System Highlights:**
 - 🎯 98.14% AASIST F1-Score
