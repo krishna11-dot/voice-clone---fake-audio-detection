@@ -2428,31 +2428,8 @@ def smart_detect(audio_path):
 - ❌ Novel research contribution
 - ❌ Replacement for human forensic analysis
 
-**Our Value:**
+**My Value:**
 > "I don't claim this is perfect. But I can explain EVERY decision - what the input is, what the output is, why I combined models, what trade-offs I made, and how I'd improve it. That's what makes this a strong learning project."
-
-### Roadmap
-
-**Short-term (Next 3 months):**
-- [ ] Optimize RTF to >1.0 for real-time capability
-- [ ] Add REST API wrapper (Flask/FastAPI)
-- [ ] Docker container for easy deployment
-- [ ] Model quantization (FP32 → INT8)
-- [ ] Reduce false negatives to <2%
-
-**Medium-term (6 months):**
-- [ ] Multi-TTS training (ElevenLabs, Coqui, VALL-E)
-- [ ] Mobile deployment (TensorFlow Lite conversion)
-- [ ] Streaming detection support
-- [ ] Knowledge distillation for smaller models
-- [ ] Edge device optimization
-
-**Long-term (1 year):**
-- [ ] Multilingual support (non-English TTS)
-- [ ] Real-time streaming detection
-- [ ] Cross-TTS generalization (train once, detect all)
-- [ ] Mobile app (iOS/Android)
-- [ ] Research paper publication
 
 ---
 
