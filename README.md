@@ -147,7 +147,7 @@ Think of it like having **three security guards** checking the same audio file:
 
 ---
 
-## 📋 Project Overview - Interview Quick Guide
+## 📋 Project Overview - 
 
 **For Technical Deep Dive**
 
@@ -322,14 +322,14 @@ Example:
 **Q: Why does AASIST beat CNN by 2.4%?**
 **A:** Attention mechanism. CNN has limited receptive field (~15 features), can't relate patterns 100ms apart. AASIST uses multi-head attention with global receptive field - can relate ANY two positions. This catches TTS artifacts like unnatural pitch consistency across distant time steps.
 
-**Q: know your system is production-ready?**
+**Q: is production-ready?**
 **A:** Four indicators:
 1. Accuracy: 98.14% exceeds >95% industry target
 2. Stability: 0 crashes in full pipeline, progressive scaling tested
 3. Efficiency: 20.5% peak memory (3x better than typical 60-70%)
 4. Explainability: Layer votes, agreement, confidence scores
 
-**Q: What's your biggest limitation?**
+**Q: biggest limitation?**
 **A:** Single TTS engine training. I initially experimented with ChatterboxTTS (newer model) but encountered high GPU memory requirements, so I switched to NeuTTS Air (2x faster: 5-7s vs 11-13s per sample). From ChatterboxTTS experiments, I observed that detectors trained on one TTS engine show degraded performance on others (accuracy drops to ~87-90%). **Mitigation:** Generate 200 samples from each of 5 TTS engines for cross-TTS generalization.
 
 ---
@@ -2644,7 +2644,7 @@ See [LICENSE](LICENSE) file for details.
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
 
-**Status:** ✅ Production Ready (9.0/10) | **Last Updated:** January 2025
+**Status:** ✅ Production Ready | **Last Updated:** October 2025
 
 **System Highlights:**
 - 🎯 98.14% AASIST F1-Score
