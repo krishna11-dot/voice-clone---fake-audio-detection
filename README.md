@@ -11,7 +11,7 @@
 
 ## 📋 Table of Contents
 
-1. [ Project Overview - (#-project-overview--)
+1. [ Project Overview - (# Project Overview - )
 2. [System Overview - Voice Cloning & Fake Detection](#-system-overview---voice-cloning--fake-detection)
 3. [Problem - Why This Exists](#-1-problem---why-this-exists)
 4. [Solution - What It Does](#-2-solution---what-it-does)
